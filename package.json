@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rolandgriesser/bitmovinplayer-like-plugin/issues"
   },
-  "homepage": "https://github.com/rolandgriesser/bitmovinplayer-like-plugin#readme"
+  "homepage": "https://github.com/rolandgriesser/bitmovinplayer-like-plugin#readme",
+  "dependencies": {
+    "bitmovin-analytics": "^2.20.0"
+  }
 }
