@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/rolandgriesser/bitmovinplayer-like-plugin#readme",
   "dependencies": {
+    "@bitmovin/api-sdk": "^1.71.0",
     "bitmovin-analytics": "^2.20.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   }
 }
