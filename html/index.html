@@ -72,9 +72,9 @@
           muted: true,
         },
         analytics: {
-          key: 'e73a3577-d91c-4214-9e6d-938fb936818a',
+          key: '2a70368e-7726-4182-9143-39584b9b4688',
           experimentName: 'feature/analyticsPlayerBundling',
-          id: 'asdf',
+          videoId: 'asdf',
           title: 'hello world2',
           debug: {
             fields: ['impressionId', 'state', 'seeked', 'duration', 'videoTimeStart', 'videoTimeEnd'],
@@ -86,8 +86,7 @@
         },
       });
 
-      var likePlugin = new BitmovinPlayerLikePlugin(player);
-      
+      var likePlugin = new BitmovinPlayerLikePlugin(player, '031c51bc-492d-4e4e-bc68-d8b3b6b0516e');
       player
         .load({
           dash: 'https://bitmovin-a.akamaihd.net/content/sintel/sintel.mpd',
