@@ -1,166 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <link
-      rel="icon"
-      href="https://ox4zindgwb3p1qdp2lznn7zb-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/cropped-icon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      href="https://ox4zindgwb3p1qdp2lznn7zb-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/cropped-icon-192x192.png"
-      sizes="192x192"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="https://ox4zindgwb3p1qdp2lznn7zb-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/cropped-icon-180x180.png"
-    />
-    <meta
-      name="msapplication-TileImage"
-      content="https://bitmovin.com/wp-content/uploads/2016/02/cropped-icon-270x270.png"
-    />
+<head>
+  <meta charset="UTF-8" />
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="icon"
+    href="https://ox4zindgwb3p1qdp2lznn7zb-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/cropped-icon-32x32.png"
+    sizes="32x32" />
+  <link rel="icon"
+    href="https://ox4zindgwb3p1qdp2lznn7zb-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/cropped-icon-192x192.png"
+    sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed"
+    href="https://ox4zindgwb3p1qdp2lznn7zb-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/cropped-icon-180x180.png" />
+  <meta name="msapplication-TileImage"
+    content="https://bitmovin.com/wp-content/uploads/2016/02/cropped-icon-270x270.png" />
 
-    <title>Bitdash Analytics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <script type="text/javascript" src="https://cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
-    <script type="text/javascript" src="https://cdn.bitmovin.com/analytics/web/2/bitmovinanalytics.min.js"></script>
-    <script type="text/javascript" src="../js/index.bundle.js"></script>
-  </head>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
 
-  <body>
-    <div id="player" style="width: 400px;"></div>
+  <title>Bitdash Analytics</title>
 
-    <ul>
-      <li><a href="bitmovin_8.html">Link to self</a></li>
-      <li><a href="#" id="custom-data-once">Set custom Data once</a></li>
-      <li><a href="#" id="change">Change Source</a></li>
-      <li><a href="#" id="change-disable">Change Source and disable</a></li>
-      <li><a href="#" id="jumpEnd">Jump to End</a></li>
-    </ul>
+  <script type="text/javascript" src="https://cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
+  <script type="text/javascript" src="https://cdn.bitmovin.com/analytics/web/2/bitmovinanalytics.min.js"></script>
+  <script type="text/javascript" src="../js/index.bundle.js"></script>
+</head>
 
-    <script type="text/javascript">
-      bitmovin.player.Player.addModule(bitmovin.analytics.PlayerModule);
-      var player = new bitmovin.player.Player(document.getElementById('player'), {
-        key: 'a6e31908-550a-4f75-b4bc-a9d89880a733',
-        // ui: false,
-        playback: {
-          autoplay: true,
-          muted: true,
+<body>
+  <div id="player" style="width: 400px;"></div>
+
+  <ul>
+    <li><a href="bitmovin_8.html">Link to self</a></li>
+    <li><a href="#" id="custom-data-once">Set custom Data once</a></li>
+    <li><a href="#" id="change">Change Source</a></li>
+    <li><a href="#" id="change-disable">Change Source and disable</a></li>
+    <li><a href="#" id="jumpEnd">Jump to End</a></li>
+  </ul>
+
+  <script type="text/javascript">
+    bitmovin.player.Player.addModule(bitmovin.analytics.PlayerModule);
+    var player = new bitmovin.player.Player(document.getElementById('player'), {
+      key: 'a6e31908-550a-4f75-b4bc-a9d89880a733',
+      // ui: false,
+      playback: {
+        autoplay: true,
+        muted: true,
+      },
+      analytics: {
+        key: '2a70368e-7726-4182-9143-39584b9b4688',
+        experimentName: 'feature/analyticsPlayerBundling',
+        videoId: 'asdf',
+        title: 'hello world2',
+        debug: {
+          fields: ['impressionId', 'state', 'seeked', 'duration', 'videoTimeStart', 'videoTimeEnd'],
         },
+      },
+      location: {
+        /*ui : 'https://cdn.bitmovin.com/player/web/beta/8/bitmovinplayer-ui.js',
+      ui_css : 'https://cdn.bitmovin.com/player/web/beta/8/bitmovinplayer-ui.css' */
+      },
+    });
+
+    var likePlugin = new BitmovinPlayerLikePlugin(player, '031c51bc-492d-4e4e-bc68-d8b3b6b0516e');
+    player
+      .load({
+        dash: 'https://bitmovin-a.akamaihd.net/content/sintel/sintel.mpd',
+        /* hls: 'https://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8',
+    dash: 'https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/11331.mpd',
+    hls: 'https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/m3u8s/11331.m3u8',
+    smooth: 'https://test.playready.microsoft.com/smoothstreaming/SSWSS720H264/SuperSpeedway_720.ism/manifest',
+    drm: {
+      widevine: {
+        LA_URL: 'https://widevine-proxy.appspot.com/proxy'
+      },
+      playready: {
+        LA_URL: 'https://playready.directtaps.net/pr/svc/rightsmanager.asmx?PlayRight=1&#038;ContentKey=EAtsIJQPd5pFiRUrV9Layw=='
+      }
+    } */
+      })
+      .then(
+        function () {
+          player.on('playbackfinished', function () {
+            console.log(player.analytics.getCurrentImpressionId());
+            console.log('playing again');
+            player.play();
+            console.log(player.analytics.getCurrentImpressionId());
+          });
+          // Add UI to loaded player
+          // uiManager = bitmovin.playerui.UIManager.Factory.buildDefaultUI(player);
+        },
+        function (errorEvent) {
+          // Play setup failed, and there’s no player UI yet to display the error in
+          console.log(errorEvent);
+        }
+      );
+
+    document.getElementById('custom-data-once').onclick = function () {
+      player.analytics.setCustomDataOnce({
+        customData1: 'after-click',
+      });
+    };
+    document.getElementById('change').onclick = function () {
+      player.pause();
+      setTimeout(() => {
+        player.unload();
+        setTimeout(() => {
+          player.load({
+            title: 'test-2',
+            dash:
+              'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd',
+            analytics: {
+              userId: 'asdf',
+              title: 'test-2-analytics',
+              videoId: 'sdfsdf',
+              config: {
+                enabled: true,
+              },
+            },
+          });
+        }, 500);
+      }, 100);
+    };
+    document.getElementById('change-disable').onclick = function () {
+      player.load({
+        title: 'test-2',
+        dash:
+          'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd',
         analytics: {
-          key: '2a70368e-7726-4182-9143-39584b9b4688',
-          experimentName: 'feature/analyticsPlayerBundling',
-          videoId: 'asdf',
-          title: 'hello world2',
-          debug: {
-            fields: ['impressionId', 'state', 'seeked', 'duration', 'videoTimeStart', 'videoTimeEnd'],
+          config: {
+            enabled: false,
           },
-        },
-        location: {
-          /*ui : 'https://cdn.bitmovin.com/player/web/beta/8/bitmovinplayer-ui.js',
-        ui_css : 'https://cdn.bitmovin.com/player/web/beta/8/bitmovinplayer-ui.css' */
         },
       });
+    };
+    document.getElementById('jumpEnd').onclick = function () {
+      player.seek(player.getDuration() - 2);
+    };
+  </script>
+</body>
 
-      var likePlugin = new BitmovinPlayerLikePlugin(player, '031c51bc-492d-4e4e-bc68-d8b3b6b0516e');
-      player
-        .load({
-          dash: 'https://bitmovin-a.akamaihd.net/content/sintel/sintel.mpd',
-          /* hls: 'https://bitmovin-a.akamaihd.net/content/sintel/hls/playlist.m3u8',
-      dash: 'https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/mpds/11331.mpd',
-      hls: 'https://bitmovin-a.akamaihd.net/content/art-of-motion_drm/m3u8s/11331.m3u8',
-      smooth: 'https://test.playready.microsoft.com/smoothstreaming/SSWSS720H264/SuperSpeedway_720.ism/manifest',
-      drm: {
-        widevine: {
-          LA_URL: 'https://widevine-proxy.appspot.com/proxy'
-        },
-        playready: {
-          LA_URL: 'https://playready.directtaps.net/pr/svc/rightsmanager.asmx?PlayRight=1&#038;ContentKey=EAtsIJQPd5pFiRUrV9Layw=='
-        }
-      } */
-        })
-        .then(
-          function () {
-            player.on('playbackfinished', function () {
-              console.log(player.analytics.getCurrentImpressionId());
-              console.log('playing again');
-              player.play();
-              console.log(player.analytics.getCurrentImpressionId());
-            });
-            // Add UI to loaded player
-            // uiManager = bitmovin.playerui.UIManager.Factory.buildDefaultUI(player);
-          },
-          function (errorEvent) {
-            // Play setup failed, and there’s no player UI yet to display the error in
-            console.log(errorEvent);
-          }
-        );
-
-      document.getElementById('custom-data-once').onclick = function () {
-        player.analytics.setCustomDataOnce({
-          customData1: 'after-click',
-        });
-      };
-      document.getElementById('change').onclick = function () {
-        player.pause();
-        setTimeout(() => {
-          player.unload();
-          setTimeout(() => {
-            player.load({
-              title: 'test-2',
-              dash:
-                'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd',
-              analytics: {
-                userId: 'asdf',
-                title: 'test-2-analytics',
-                videoId: 'sdfsdf',
-                config: {
-                  enabled: true,
-                },
-              },
-            });
-          }, 500);
-        }, 100);
-      };
-      document.getElementById('change-disable').onclick = function () {
-        player.load({
-          title: 'test-2',
-          dash:
-            'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd',
-          analytics: {
-            config: {
-              enabled: false,
-            },
-          },
-        });
-      };
-      document.getElementById('jumpEnd').onclick = function () {
-        player.seek(player.getDuration() - 2);
-      };
-    </script>
-  </body>
 </html>

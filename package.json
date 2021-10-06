@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && webpack js/index.js -o js/index.bundle.js --mode=production",
+    "build:dev": "tsc && webpack app/app.js -o app/app.bundle.js --mode=development",
+    "dev-server": "cross-env NODE_ENV=development webpack-dev-server --progress",
+    "watch":     "webpack js/index.ts --module-bind ts=awesome-typescript-loader -o js/index.bundle.js --mode=development --watch",
     "start": "npm run dev-server"
   },
   "repository": {
